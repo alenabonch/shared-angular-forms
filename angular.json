@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "shared-angular-forms:build:production"
+              "buildTarget": "shared-angular-forms:build:production"
             },
             "development": {
-              "browserTarget": "shared-angular-forms:build:development"
+              "buildTarget": "shared-angular-forms:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shared-angular-forms:build"
+            "buildTarget": "shared-angular-forms:build"
           }
         },
         "test": {
