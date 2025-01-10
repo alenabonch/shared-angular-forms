@@ -2,16 +2,15 @@ import { Component, Input, inject } from '@angular/core';
 import { ControlContainer, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-address-group',
-  standalone: true,
-  imports: [ReactiveFormsModule],
-  viewProviders: [
-    {
-      provide: ControlContainer,
-      useFactory: () => inject(ControlContainer, {skipSelf: true})
-    }
-  ],
-  template: `
+    selector: 'app-address-group',
+    imports: [ReactiveFormsModule],
+    viewProviders: [
+        {
+            provide: ControlContainer,
+            useFactory: () => inject(ControlContainer, { skipSelf: true })
+        }
+    ],
+    template: `
       <fieldset [formGroupName]="controlKey">
         <legend>{{label}}</legend>
         <div class="form-field">

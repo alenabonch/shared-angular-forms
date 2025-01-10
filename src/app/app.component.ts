@@ -3,10 +3,9 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AddressGroupComponent } from './address-group/address-group.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [ReactiveFormsModule, AddressGroupComponent],
-  template: `
+    selector: 'app-root',
+    imports: [ReactiveFormsModule, AddressGroupComponent],
+    template: `
     <img class="logo" src="https://www.decodedfrontend.io/wp-content/uploads/2021/01/logo-01.png">
     
     <form [formGroup]="form" (ngSubmit)="submit()">
